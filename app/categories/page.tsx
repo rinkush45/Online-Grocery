@@ -1,15 +1,16 @@
 import Link from 'next/link';
+import dairy from '../Images/Dairy.jpg'
 
 export default function Categories() {
   const categories = [
-    { name: 'Fruits & Vegetables', image: '/images/fruits.jpg', items: '150+ items' },
-    { name: 'Dairy & Eggs', image: '/images/dairy.jpg', items: '80+ items' },
-    { name: 'Meat & Fish', image: '/images/meat.jpg', items: '60+ items' },
-    { name: 'Bakery', image: '/images/bakery.jpg', items: '40+ items' },
-    { name: 'Beverages', image: '/images/beverages.jpg', items: '100+ items' },
-    { name: 'Snacks', image: '/images/snacks.jpg', items: '120+ items' },
-    { name: 'Household', image: '/images/household.jpg', items: '90+ items' },
-    { name: 'Personal Care', image: '/images/personal-care.jpg', items: '70+ items' },
+    { name: 'Fruits & Vegetables', image: 'fruits', items: '150+ items' },
+    { name: 'Dairy & Eggs', image: dairy, items: '80+ items' },
+    { name: 'Meat & Fish', image: 'meat', items: '60+ items' },
+    { name: 'Bakery', image: 'bakery', items: '40+ items' },
+    { name: 'Beverages', image: 'beverages', items: '100+ items' },
+    { name: 'Snacks', image: 'snacks', items: '120+ items' },
+    { name: 'Household', image: 'household', items: '90+ items' },
+    { name: 'Personal Care', image: 'personal-care', items: '70+ items' },
   ];
 
   return (

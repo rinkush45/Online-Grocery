@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import dairy from '../app/Images/Dairy.jpg'
 
 export default function Home() {
   const categories = [
-    { name: 'Fruits & Vegetables', image: '/images/fruits.jpg' },
+    { name: 'Fruits & Vegetables', image: dairy },
     { name: 'Dairy & Eggs', image: '/images/dairy.jpg' },
     { name: 'Meat & Fish', image: '/images/meat.jpg' },
     { name: 'Bakery', image: '/images/bakery.jpg' },
