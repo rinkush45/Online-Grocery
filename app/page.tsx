@@ -1,14 +1,25 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import dairy from '../app/Images/Dairy.jpg'
+import dairy from '../app/assets/Dairy.jpg';
 
 export default function Home() {
-  const categories = [
-    { name: 'Fruits & Vegetables', image: dairy },
-    { name: 'Dairy & Eggs', image: '/images/dairy.jpg' },
-    { name: 'Meat & Fish', image: '/images/meat.jpg' },
-    { name: 'Bakery', image: '/images/bakery.jpg' },
-  ];
+  const categories = { 
+    "Details":
+    [
+    {name: 'Fruits & Vegetables', 
+      image: dairy, 
+    },
+    { name: 'Dairy & Eggs', 
+      image: '/images/dairy.jpg' 
+    },
+    { name: 'Meat & Fish', 
+      image: '/images/meat.jpg' 
+    },
+    { name: 'Bakery', 
+      image: '/images/bakery.jpg' 
+    },
+  ]
+};
 
   const featuredProducts = [
     { name: 'Fresh Organic Bananas', price: 2.99, image: '/images/bananas.jpg' },
@@ -39,7 +50,7 @@ export default function Home() {
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <h2 className="text-2xl font-bold mb-6">Shop by Category</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          {categories.map((category) => (
+          {categories.Details.map((category) => (
             <div key={category.name} className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="relative h-40">
                 <div className="absolute inset-0 bg-gray-200" />
